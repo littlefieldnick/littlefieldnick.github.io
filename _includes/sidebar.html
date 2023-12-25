@@ -1,5 +1,5 @@
 <div>
-{% for member in site.data.pi %}
+{% for member in site.data.about %}
 <div class="jumbotron">
    <center>
    <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/{{ member.photo }}" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
@@ -13,51 +13,51 @@
   </div>
   </center>
 
-  <ul style="overflow: hidden">
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  {% endif %}
+<!--  <ul style="overflow: hidden">-->
+<!--  {% if member.number_educ == 1 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  {% endif %}-->
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  {% endif %}
+<!--  {% if member.number_educ == 2 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>-->
+<!--  {% endif %}-->
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short }} </li>
-  {% endif %}
+<!--  {% if member.number_educ == 3 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education3short }} </li>-->
+<!--  {% endif %}-->
 
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
-  {% endif %}
+<!--  {% if member.number_educ == 4 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>-->
+<!--  {% endif %}-->
 
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education5short | replace: "-","&#8211;"}} </li>
-  {% endif %}
+<!--  {% if member.number_educ == 5 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education5short | replace: "-","&#8211;"}} </li>-->
+<!--  {% endif %}-->
 
-  {% if member.number_educ == 6 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
-  <!-- <li> {{ member.education5short | replace: "-","&#8211;"}} </li> -->
-  <li> {{ member.education6short | replace: "-","&#8211;"}} </li>
-  {% endif %}
-  </ul>
-</div>
+<!--  {% if member.number_educ == 6 %}-->
+<!--  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>-->
+<!--  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>-->
+<!--  &lt;!&ndash; <li> {{ member.education5short | replace: "-","&#8211;"}} </li> &ndash;&gt;-->
+<!--  <li> {{ member.education6short | replace: "-","&#8211;"}} </li>-->
+<!--  {% endif %}-->
+<!--  </ul>-->
+<!--</div>-->
 {% endfor %}
 </div>
 
-<div class="jumbotron">
+<div class="jumbotron col-md-12">
   <h4>News</h4>
 
   {% for article in site.data.news limit:3 %}

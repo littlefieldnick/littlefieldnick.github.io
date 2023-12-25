@@ -9,13 +9,13 @@
 
   # cv: cv/cv.pdf
   # # Change the number below to the number of "educations" you have (up to 6)
-  # number_educ: 2
-  # education1: "(1942) Ph.D. Physics, Princeton University"
-  # education2: "(1939) B.S. Physics, Massachusetts Institute of Technology"
-  # # education3: 
-  # education4: 
-  # education5: 
-  # education6: 
+  number_educ: 4
+  education1: "(Sept. 2023 - Present) Ph.D. Intelligent Systems, University of Pittsburgh"
+  education2: "(Sept. 2020 - Dec. 2022) M.S. Statistics, University of Southern Maine"
+  education3: "(Sept. 2019 - Dec. 2021) Graduate Certificate, Data Science, University of Southern Maine"
+  education4: "(Sept. 2013 - May 2018) B.S. Computer Science, University of Southern Maine"
+  # education5:
+  # education6:
   # education1short: (1942) Ph.D. Physics, Princeton
   # education2short: (1939) B.S. Physics, MIT
   # education3short: 
